@@ -1,0 +1,47 @@
+{
+  "name": "vite-vue2-project-test",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "commit": "git-cz",
+    "prepare": "husky install",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@vue/composition-api": "1.6.1",
+    "vue": "2.6.14"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.23.1",
+    "@commitlint/cli": "^16.3.0",
+    "@commitlint/config-conventional": "^16.2.4",
+    "@vue/runtime-dom": "3.2.33",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.3.0",
+    "eslint": "^8.15.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "unplugin-vue2-script-setup": "0.10.2",
+    "vite": "2.9.9",
+    "vite-plugin-vue2": "2.0.0",
+    "vue-template-compiler": "2.6.14"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "eslint ."
+    ]
+  }
+}
