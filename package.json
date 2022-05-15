@@ -13,7 +13,8 @@
     "commit": "git-cz",
     "prepare": "husky install",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "release": "standard-version"
   },
   "dependencies": {
     "@vue/composition-api": "1.6.1",
@@ -29,6 +30,7 @@
     "eslint": "^8.15.0",
     "husky": "^8.0.1",
     "lint-staged": "^12.4.1",
+    "standard-version": "^9.3.2",
     "unplugin-vue2-script-setup": "0.10.2",
     "vite": "2.9.9",
     "vite-plugin-vue2": "2.0.0",
